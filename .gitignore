@@ -24,10 +24,6 @@ wheels/
 .installed.cfg
 *.egg
 
-# Generated documentation
-api_docs_*.json
-api_docs_*.md
-
 # IDE
 .vscode/
 .idea/

@@ -1,0 +1,1445 @@
+[
+  {
+    "name": "Accounting Api",
+    "description": "Accounting APIs",
+    "type": "REST",
+    "url": "https://developer.titandms.com.au/api-details#api=664e28fd5a02783065dff727",
+    "link": "/api-details#api=664e28fd5a02783065dff727",
+    "details": {
+      "title": "Accounting Api",
+      "description": "Accounting APIs",
+      "operations": [
+        {
+          "method": "POST",
+          "name": "Accounting API - BalanceSheets Query",
+          "description": "Query for Balance Sheets list This API allows the user to get all balance sheets for journal entry posting.",
+          "endpoint": "https://api.titandms.com.au/accounting/Accounting/BalanceSheets",
+          "response": [
+            {
+              "BalanceSheet": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "Accounting API - Companies Query",
+          "description": "Query for Companies information",
+          "endpoint": "https://api.titandms.com.au/accounting/Accounting/Companies",
+          "response": [
+            {
+              "CompanyKey": 0,
+              "CompanyName": "string",
+              "CurrentFinancialYearKey": 0,
+              "CurrentFinancialPeriodId": 0
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "Accounting API - Financial Year Query",
+          "description": "Query for Get Financial Years",
+          "endpoint": "https://api.titandms.com.au/accounting/Accounting/FinancialYear",
+          "response": {
+            "FinancialYearKey": 0,
+            "FinancialYearStartDate": "string",
+            "FinancialYearEndDate": "string",
+            "Periods": [
+              {
+                "PeriodId": 0,
+                "PeriodStartDate": "string",
+                "PeriodEndDate": "string"
+              }
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "name": "Accounting API - Journal Document Types",
+          "description": "This API allows the user to get all journal document types for journal entry posting.",
+          "endpoint": "https://api.titandms.com.au/accounting/Accounting/JournalDocumentTypes",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "Accounting API - Journal Tax Code Types",
+          "description": "This API allows the user to get all journal tax code types for journal entry posting.",
+          "endpoint": "https://api.titandms.com.au/accounting/Accounting/JournalTaxCodeTypes",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "POST",
+          "name": "Accounting API - LedgerAccounts",
+          "description": "This API allows the user to get all ledger accounts within a financial year",
+          "endpoint": "https://api.titandms.com.au/accounting/Accounting/LedgerAccounts",
+          "response": [
+            {
+              "CompanyKey": 0,
+              "FinancialYear": "string",
+              "LedgerAccountKey": 0,
+              "CostCentre": 0,
+              "CostCentreDescription": "string",
+              "Account": 0,
+              "AccountDescription": "string",
+              "Subaccount": "string",
+              "SubaccountDescription": "string",
+              "IsXrefRequired": true,
+              "IsVehicleIdRequired": true,
+              "IsQuantityRequired": true
+            }
+          ]
+        },
+        {
+          "method": "POST",
+          "name": "Accounting API - Supplier Query",
+          "description": "Query for supplier information",
+          "endpoint": "https://api.titandms.com.au/accounting/Accounting/SupplierQuery",
+          "response": {
+            "CreditorId": 0,
+            "CompanyNumber": "string",
+            "TaxId": "string"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "Appraisal Api",
+    "description": "Create/Update Vehicle Appraisal",
+    "type": "REST",
+    "url": "https://developer.titandms.com.au/api-details#api=appraisal",
+    "link": "/api-details#api=appraisal",
+    "details": {
+      "title": "Appraisal Api",
+      "description": "Create/Update Vehicle Appraisal",
+      "operations": [
+        {
+          "method": "POST",
+          "name": "/VehicleAppraisal/AddUpdateVehicleAppraisal - POST",
+          "description": "Add or update vehicle appraisal",
+          "endpoint": "https://api.titandms.com.au/appraisal/VehicleAppraisal/AddUpdateVehicleAppraisal",
+          "response": {
+            "AppraisalKey": 0,
+            "ExternalAppraisalKey": "string",
+            "AppraisedDate": "string",
+            "AppraisedNote": "string",
+            "StockValue": 0,
+            "VehiclePricingGuideSourceCode": 0,
+            "RegistrationExpiryDate": "string",
+            "Odometer": 0,
+            "LocationId": 0,
+            "CancellationReason": "string",
+            "OwnerCustomerKey": 0,
+            "Salesperson": "string",
+            "AppraisedBy": "string",
+            "TradeInValueTaxInclusive": 0,
+            "RecommendedRetailPrice": 0,
+            "AppraisalStatusCode": 0,
+            "AppraisalDate": "string",
+            "EstimatedReconditionCost": 0,
+            "ExpiryDate": "string",
+            "CloseStatusCode": 0,
+            "Vehicle": {
+              "VehicleKey": 0,
+              "ExternalVehicleKey": "string",
+              "MakeCode": 0,
+              "Vin": "string",
+              "BootKey": "string",
+              "IgnitionKey": "string",
+              "FuelCode": 0,
+              "RadioCode": "string",
+              "VehicleNote": "string",
+              "SellingDealerCode": "string",
+              "RegistrationNo": "string",
+              "ComplianceNo": "string",
+              "VehicleEngine": "string",
+              "VehicleTransmission": "string",
+              "ComplianceDate": "string",
+              "ModelPricingGuideCode": "string",
+              "DriverKey": 0,
+              "ExternalDriverKey": "string",
+              "FleetKey": 0,
+              "ExternalFleetKey": "string",
+              "VehicleDescription": "string",
+              "ModelDescription": "string",
+              "VehicleColour": "string",
+              "InteriorColour": "string",
+              "EngineNumber": "string",
+              "BuildDate": "string",
+              "BodyType": "string",
+              "ModelID": "string",
+              "ManufacturerId": "string",
+              "ManufacturedDate": "string",
+              "RegistrationBureaucracy": "string",
+              "EngineCubicCapacity": 0,
+              "RegistrationExpiryDate": "string",
+              "StatusCode": 0,
+              "Family": "string",
+              "VehiclePricingGuideConditionCode": 0,
+              "VehicleType": 0,
+              "Owner": {
+                "TradingEntityKey": 0,
+                "ExternalTradingEntityKey": "string",
+                "WorkEmail": "string",
+                "Abn": "string",
+                "Acn": "string",
+                "CompanyName": "string",
+                "FirstName": "string",
+                "MiddleName": "string",
+                "LastName": "string",
+                "HomePhone": "string",
+                "Mobile": "string",
+                "Fax": "string",
+                "WorkPhone": "string",
+                "PostalAddress": {
+                  "StreetNo": "string",
+                  "Address1": "string",
+                  "Address2": "string",
+                  "City": "string",
+                  "PostCode": "string",
+                  "State": "string",
+                  "CountryCode": "string"
+                },
+                "StreetAddress": {
+                  "StreetNo": "string",
+                  "Address1": "string",
+                  "Address2": "string",
+                  "City": "string",
+                  "PostCode": "string",
+                  "State": "string",
+                  "CountryCode": "string"
+                },
+                "PrivateEmail": "string",
+                "Gender": 0,
+                "Title": 0,
+                "BirthDate": "string",
+                "TaxType": 0,
+                "OrganisationType": 0,
+                "Privacy": 0,
+                "Occupation": "string",
+                "DriverLicence": "string",
+                "DriverLicenceExpiryDate": "string",
+                "PreferredContactMethod": 0
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleAppraisal/Bureaucracies - GET",
+          "description": "Get all bureaucracies",
+          "endpoint": "https://api.titandms.com.au/appraisal/VehicleAppraisal/Bureaucracies",
+          "response": [
+            {
+              "Name": "string",
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleAppraisal/ContactTitles - GET",
+          "description": "Get all contact titles",
+          "endpoint": "https://api.titandms.com.au/appraisal/VehicleAppraisal/ContactTitles",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleAppraisal/Employees - GET",
+          "description": "Get all employees",
+          "endpoint": "https://api.titandms.com.au/appraisal/VehicleAppraisal/Employees",
+          "response": [
+            {
+              "EmpId": "string",
+              "Name": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleAppraisal/Families?makeCode={makeCode} - GET",
+          "description": "Get all families by make code",
+          "endpoint": "https://api.titandms.com.au/appraisal/VehicleAppraisal/Families?makeCode={makeCode}",
+          "response": [
+            {
+              "VehicleType": 0,
+              "Family": "string",
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleAppraisal/Locations - GET",
+          "description": "Get all locations",
+          "endpoint": "https://api.titandms.com.au/appraisal/VehicleAppraisal/Locations",
+          "response": [
+            {
+              "Id": 0,
+              "Name": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleAppraisal/Makes - GET",
+          "description": "Get all makes",
+          "endpoint": "https://api.titandms.com.au/appraisal/VehicleAppraisal/Makes",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleAppraisal/Models?makeCode={makeCode} - GET",
+          "description": "Get all models by make code and family",
+          "endpoint": "https://api.titandms.com.au/appraisal/VehicleAppraisal/Models?makeCode={makeCode}[&family]",
+          "response": [
+            {
+              "ModelId": "string",
+              "Description": "string",
+              "Badge": "string",
+              "Series": "string",
+              "EngineCode": "string",
+              "TransmissionCode": "string",
+              "VehicleType": 0,
+              "FuelCode": 0,
+              "BodyStyleCode": 0,
+              "NoOfDoors": 0,
+              "NoOfCylinders": 0,
+              "ModelYear": 0
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleAppraisal/OrganisationTypes - GET",
+          "description": "Get all organisation types",
+          "endpoint": "https://api.titandms.com.au/appraisal/VehicleAppraisal/OrganisationTypes",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleAppraisal/Privacies - GET",
+          "description": "Get all privacies",
+          "endpoint": "https://api.titandms.com.au/appraisal/VehicleAppraisal/Privacies",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleAppraisal/TaxTypes - GET",
+          "description": "Get all tax types",
+          "endpoint": "https://api.titandms.com.au/appraisal/VehicleAppraisal/TaxTypes",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleAppraisal/VehicleBodyStyles - GET",
+          "description": "Get all vehicle body styles",
+          "endpoint": "https://api.titandms.com.au/appraisal/VehicleAppraisal/VehicleBodyStyles",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleAppraisal/VehicleFuels - GET",
+          "description": "Get all vehicle fuels",
+          "endpoint": "https://api.titandms.com.au/appraisal/VehicleAppraisal/VehicleFuels",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleAppraisal/VehicleTypes - GET",
+          "description": "Get all vehicle types",
+          "endpoint": "https://api.titandms.com.au/appraisal/VehicleAppraisal/VehicleTypes",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "CRM Api",
+    "description": "CRM Api",
+    "type": "REST",
+    "url": "https://developer.titandms.com.au/api-details#api=crm-api",
+    "link": "/api-details#api=crm-api",
+    "details": {
+      "title": "CRM Api",
+      "description": "CRM Api",
+      "operations": [
+        {
+          "method": "POST",
+          "name": "/Customer- POST",
+          "description": "Add Update Customer",
+          "endpoint": "http://api.titandms.com.au/crm/Customer",
+          "response": {
+            "Id": "string",
+            "DMSId": 0,
+            "CustomerType": "string",
+            "Title": "Mr",
+            "FirstName": "string",
+            "LastName": "string",
+            "Gender": "Male",
+            "CompanyName": "string",
+            "Email": "string",
+            "Description": "string",
+            "Occupation": "string",
+            "Birthdate": "2024-10-30",
+            "Address": [
+              {
+                "Type": "Street",
+                "CountryCode": "Australia",
+                "StreetNo": "string",
+                "StreetLine1": "string",
+                "StreetLine2": "string",
+                "Suburb": "string",
+                "State": "string",
+                "Postcode": "string",
+                "IsPreferred": true
+              }
+            ],
+            "MobilePhone": "string",
+            "HomePhone": "string",
+            "WorkPhone": "string",
+            "Fax": "string",
+            "CommunicationPreferences": [
+              {
+                "Events_experience": true,
+                "Ownr_vehic_comm": true,
+                "Partnr_Sponsor": true,
+                "Prods_serv": true,
+                "Promo_off": true,
+                "Surv_research": true,
+                "Vehicle_connCar": true,
+                "Channel": "Invalid",
+                "Opt_out_all": true
+              }
+            ],
+            "SellerIdentifier": "string",
+            "SystemType": "string",
+            "SalespersonId": "string"
+          }
+        },
+        {
+          "method": "POST",
+          "name": "/Opportunity - POST",
+          "description": "Add Update Opportunity",
+          "endpoint": "http://api.titandms.com.au/crm/Opportunity",
+          "response": {
+            "SellerIdentifier": "string",
+            "LeadSource": "string",
+            "LeadRequest": "Brochure",
+            "LeadType": "Manufacturer",
+            "SalespersonId": "string",
+            "Tags": [
+              "string"
+            ],
+            "Comments": "string",
+            "Environment": {
+              "SiteOrigin": "string",
+              "PageSource": "string",
+              "IPAddress": "string",
+              "SessionId": "string"
+            },
+            "Customer": {
+              "Id": "string",
+              "DMSId": 0,
+              "Title": "Mr",
+              "FirstName": "string",
+              "LastName": "string",
+              "Gender": "Male",
+              "CompanyName": "string",
+              "Email": "string",
+              "Description": "string",
+              "Occupation": "string",
+              "Birthdate": "string",
+              "Address": [
+                {
+                  "Type": "Street",
+                  "CountryCode": "Australia",
+                  "StreetNo": "string",
+                  "StreetLine1": "string",
+                  "StreetLine2": "string",
+                  "Suburb": "string",
+                  "State": "string",
+                  "Postcode": "string",
+                  "IsPreferred": true
+                }
+              ],
+              "MobilePhone": "string",
+              "HomePhone": "string",
+              "WorkPhone": "string",
+              "Fax": "string",
+              "CommunicationPreferences": {
+                "CanContactByEmail": true,
+                "CanContactByMail": true,
+                "CanContactByPhone": true,
+                "CanContactBySMS": true
+              }
+            },
+            "VehicleOpportunity": {
+              "Id": "string",
+              "PurchaseType": "NewCar",
+              "Make": "string",
+              "Model": "string",
+              "Badge": "string",
+              "Series": "string",
+              "Description": "string",
+              "Year": 0,
+              "ManufacturerDate": "string",
+              "EngineDescription": "string",
+              "Transmission": "string",
+              "Colour": "string",
+              "BodyType": "string",
+              "FuelType": "string",
+              "VIN": "string",
+              "RegistrationNumber": "string",
+              "StockNo": "string",
+              "Odometer": 0
+            },
+            "Milestones": [
+              {
+                "Id": "string",
+                "MilestoneType": "InitialContact",
+                "CompletionDate": "string"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "Part Order",
+    "description": "Add/Update Part Order",
+    "type": "REST",
+    "url": "https://developer.titandms.com.au/api-details#api=part-order",
+    "link": "/api-details#api=part-order",
+    "details": {
+      "title": "Part Order",
+      "description": "Add/Update Part Order",
+      "operations": [
+        {
+          "method": "GET",
+          "name": "/CreditNoteReasonCodes - GET",
+          "description": "Get All Credit Note Reason Codes",
+          "endpoint": "https://api.titandms.com.au/PartOrder/CreditNoteReasonCodes",
+          "response": [
+            {
+              "Code": "string",
+              "StatusCode": 0,
+              "Description": "string",
+              "RestockingPenaltyRate": 0,
+              "IsDamaged": "string"
+            }
+          ]
+        },
+        {
+          "method": "POST",
+          "name": "/CreditRequest - POST",
+          "description": "Create Credit Request",
+          "endpoint": "https://api.titandms.com.au/PartOrder/CreditRequest",
+          "response": {
+            "PartCreditRequestHeader": {
+              "CreditNoteReasonCode": "string",
+              "StoreKey": 0,
+              "DebtorID": 0,
+              "CreditReference": "string",
+              "RequestDate": "string"
+            },
+            "PartCreditRequestLines": [
+              {
+                "PartItemCode": "string",
+                "InvoiceNo": "string",
+                "Make": "string",
+                "QtyRequested": 0
+              }
+            ]
+          }
+        },
+        {
+          "method": "POST",
+          "name": "/CreditRequestAsync - POST",
+          "description": "Toyota ZA Credit Request Async",
+          "endpoint": "https://api.titandms.com.au/PartOrder/CreditRequestAsync",
+          "response": ""
+        },
+        {
+          "method": "GET",
+          "name": "/Stores - GET",
+          "description": "Get All Stores",
+          "endpoint": "https://api.titandms.com.au/PartOrder/Stores",
+          "response": [
+            {
+              "StoreKey": 0,
+              "StoreId": 0,
+              "StoreName": "string"
+            }
+          ]
+        },
+        {
+          "method": "POST",
+          "name": "/SubmitPartOrder - POST",
+          "description": "Submit Part Order",
+          "endpoint": "https://api.titandms.com.au/PartOrder/SubmitPartOrder",
+          "response": {
+            "DebtorId": 0,
+            "StoreId": 0,
+            "PickslipKey": 0,
+            "PickslipNo": 0,
+            "OrderNo": "string",
+            "SaleOrderTypeCode": "string",
+            "Vin": "string",
+            "TradingEntityKey": 0,
+            "DeliveryMethod": "string",
+            "StreetNo": "string",
+            "StreetLine1": "string",
+            "StreetLine2": "string",
+            "Suburb": "string",
+            "CountryCode": 0,
+            "SubDistrict": "string",
+            "PostCode": "string",
+            "State": "string",
+            "SpecialInstruction": "string",
+            "DeliveryRunId": "string",
+            "PurchasingEmpName": "string",
+            "DeliveryTo": "string",
+            "OrderStatus": "string",
+            "TransactionNumber": "string",
+            "TransactionDate": "string",
+            "TransactionTime": "string",
+            "OrderOrigin": 0,
+            "CustomerContact": "string",
+            "SuspendRule": "string",
+            "HoldUntilComplete": true,
+            "PromiseDate": "string",
+            "DefaultBackOrderMethod": "string",
+            "FreightCost": 0,
+            "DeliveryToSiteId": "string",
+            "DeliveryInstruction": "string",
+            "AutoCreateStockStore": false,
+            "PickslipOrderLines": [
+              {
+                "StockKey": 0,
+                "PartNumber": "string",
+                "Quantity": 0.0001,
+                "BackOrderMethod": "string",
+                "BinLocation": "string",
+                "MakeId": "string",
+                "PriceType": 0,
+                "UnitPriceTaxInclusive": 0.0001,
+                "UnitPriceTaxExclusive": 0.0001,
+                "OrderedPartNumber": "string",
+                "SupersessionAllowed": true,
+                "Supply": 0
+              }
+            ],
+            "UpdateCustomer": true,
+            "Customer": {
+              "TitanProfileId": 0,
+              "ThirdPartyProfileId": "string",
+              "FirstName": "string",
+              "LastName": "string",
+              "Name": "string",
+              "Title": 0,
+              "Initials": "string",
+              "BusinessTaxNo": "string",
+              "Contact": {
+                "MobilePhone": "string",
+                "WorkPhone": "string",
+                "HomePhone": "string",
+                "CompanyPhone": "string",
+                "Email": "string",
+                "StreetAddress": {
+                  "StreetNo": "string",
+                  "StreetLine1": "string",
+                  "StreetLine2": "string",
+                  "Suburb": "string",
+                  "State": "string",
+                  "Postcode": "string"
+                },
+                "MailingAddress": {
+                  "StreetNo": "string",
+                  "StreetLine1": "string",
+                  "StreetLine2": "string",
+                  "Suburb": "string",
+                  "State": "string",
+                  "Postcode": "string"
+                }
+              },
+              "CompanyContact": "string"
+            }
+          }
+        },
+        {
+          "method": "POST",
+          "name": "/SubmitPartOrderAsync - POST",
+          "description": "Toyota ZA Asynchronous Part Order Endpoint",
+          "endpoint": "https://api.titandms.com.au/PartOrder/SubmitPartOrderAsync",
+          "response": ""
+        },
+        {
+          "method": "POST",
+          "name": "/UpdatePartOrder - POST",
+          "description": "Success. Return the Credit Request ID",
+          "endpoint": "https://api.titandms.com.au/PartOrder/UpdatePartOrder",
+          "response": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Service Api",
+    "description": "Service Api",
+    "type": "REST",
+    "url": "https://developer.titandms.com.au/api-details#api=service-api",
+    "link": "/api-details#api=service-api",
+    "details": {
+      "title": "Service Api",
+      "description": "Service Api",
+      "operations": [
+        {
+          "method": "GET",
+          "name": "/RepairOrder/GetRepairOrder - GET",
+          "description": "Get Repair Order",
+          "endpoint": "https://api.titandms.com.au/TitanServiceBooking/RepairOrder/GetRepairOrder[?roNo][&regoNo][&phoneNo]",
+          "response": ""
+        },
+        {
+          "method": "POST",
+          "name": "/ServiceBooking/appointments - POST",
+          "description": "Save Appointment",
+          "endpoint": "https://api.titandms.com.au/TitanServiceBooking/ServiceBooking/appointments",
+          "response": {
+            "RepairOrderNo": "string",
+            "IsNoShow": true,
+            "RepairOrderStatus": 0,
+            "VehicleId": 0,
+            "VehicleStatus": 0,
+            "WorkshopId": 0,
+            "Odometer": 0,
+            "OdometerIn": 0,
+            "CustomerComment": "string",
+            "ServiceReminder": "string",
+            "ContactNo": "string",
+            "BookedInBy": "string",
+            "ServiceAdvisorId": "string",
+            "BookingDate": "string",
+            "TimeIn": "string",
+            "TimeOut": "string",
+            "BookingSourceCode": "string",
+            "EmpRoleIdRestrict": "string",
+            "ServiceRepairOrderHeaderKey": 0,
+            "ThirdPartyId": "string",
+            "Jobs": [
+              {
+                "RepairOrderLineKey": 0,
+                "CodebookSourceCode": 0,
+                "OperationCode": "string",
+                "OperationDescription": "string",
+                "BillingCode": "string",
+                "StandardHour": 0,
+                "LabourAmt": 0,
+                "LabourInvoicedTaxAmt": 0,
+                "PartAmt": 0,
+                "SundryAmt": 0,
+                "TotalAmt": 0,
+                "TranStatusCode": 0,
+                "Description": "string",
+                "ServiceRepairOrderInvoiceLineKey": 0,
+                "FixedContractPrice": 0,
+                "FixedContractTaxAmt": 0,
+                "InvoiceNote": "string",
+                "CustomerLiveStatement": "string",
+                "ROInvoiceDescription": "string",
+                "ROJobDescription": "string",
+                "ServiceComponentLabours": [
+                  {
+                    "LabourOperationNumber": "string",
+                    "CodebookSourceCode": 0,
+                    "StandardLabourHour": 0,
+                    "StatusCode": 0,
+                    "Description": "string",
+                    "TimeUnit": 0
+                  }
+                ],
+                "ServiceSundries": [
+                  {
+                    "SundryCode": "string",
+                    "ServiceSundryId": "string",
+                    "SundryProductType": 0,
+                    "StatusCode": 0,
+                    "Description": "string",
+                    "Qty": 0,
+                    "InvoicedAmt": 0,
+                    "InvoicedTaxAmt": 0,
+                    "UnitPrice": 0,
+                    "PriceTaxInclusive": 0,
+                    "PriceTaxExclusive": 0,
+                    "CostTaxInclusive": 0,
+                    "CostTaxExclusive": 0,
+                    "ServiceSundryType": 0
+                  }
+                ],
+                "ServiceParts": [
+                  {
+                    "PartItemCode": "string",
+                    "Description": "string",
+                    "Qty": 0,
+                    "InvoicedAmt": 0,
+                    "InvoicedTaxAmt": 0,
+                    "UnitPrice": 0,
+                    "SundryChargeID": "string",
+                    "SundrySalesAmt": 0
+                  }
+                ],
+                "NoteList": [
+                  "string"
+                ]
+              }
+            ],
+            "Customer": {
+              "TradingEntityKey": 0,
+              "StatusCode": 0,
+              "TitleCode": 0,
+              "Title": "string",
+              "Gender": "string",
+              "GenderCode": 0,
+              "CompanyName": "string",
+              "WorkEmail": "string",
+              "Salutation": "string",
+              "DriverLicenceNo": "string",
+              "DriverLicenceExpiryDate": "string",
+              "DateOfBirth": "string",
+              "CivilNumber": "string",
+              "PrivacyCode": 0,
+              "Abn": "string",
+              "Acn": "string",
+              "FirstName": "string",
+              "MiddleName": "string",
+              "LastName": "string",
+              "HomePhone": "string",
+              "DirectPhone": "string",
+              "Mobile": "string",
+              "Fax": "string",
+              "WorkPhone": "string",
+              "PostalAddress": {
+                "No": "string",
+                "AddressTypeCode": 0,
+                "StreetLine1": "string",
+                "StreetLine2": "string",
+                "Suburb": "string",
+                "State": "string",
+                "PostCode": "string",
+                "CountryCode": 0,
+                "SubDistrict": "string"
+              },
+              "StreetAddress": {
+                "No": "string",
+                "AddressTypeCode": 0,
+                "StreetLine1": "string",
+                "StreetLine2": "string",
+                "Suburb": "string",
+                "State": "string",
+                "PostCode": "string",
+                "CountryCode": 0,
+                "SubDistrict": "string"
+              },
+              "PrivateEmail": "string",
+              "TaxType": 0,
+              "OrganisationType": 0,
+              "Occupation": "string",
+              "PreferredContactMethod": 0
+            },
+            "Vehicle": {
+              "VehicleKey": 0,
+              "OwnerKey": 0,
+              "MakeCode": 0,
+              "MakeId": "string",
+              "Vin": "string",
+              "BootKey": "string",
+              "IgnitionKey": "string",
+              "FuelCode": 0,
+              "RadioCode": "string",
+              "VehicleNote": "string",
+              "SellingDealerCode": "string",
+              "RegoNo": "string",
+              "ComplianceNo": "string",
+              "VehicleEngine": "string",
+              "VehicleTransmission": "string",
+              "ComplianceDate": "string",
+              "DriverKey": 0,
+              "FleetKey": 0,
+              "VehicleDescription": "string",
+              "VehicleColour": "string",
+              "InteriorColour": "string",
+              "EngineNo": "string",
+              "BuildDate": "string",
+              "BodyType": "string",
+              "VehicleType": 0,
+              "ModelID": "string",
+              "ManufacturerId": "string",
+              "ManufacturedDate": "string",
+              "RegoBureaucracy": "string",
+              "EngineCubicCapacity": 0,
+              "RegistrationExpiryDate": "string",
+              "ModelYear": 0,
+              "StatusCode": 0,
+              "Family": "string",
+              "OdometerReading": 0,
+              "NextServiceDate": "string",
+              "NextServiceMileage": 0,
+              "Tag": "string"
+            },
+            "NoteList": [
+              "string"
+            ],
+            "LoanCarChecked": true
+          }
+        },
+        {
+          "method": "GET",
+          "name": "/ServiceBooking/GetServiceAdvisors - GET",
+          "description": "Get Service Advisors",
+          "endpoint": "https://api.titandms.com.au/TitanServiceBooking/ServiceBooking/GetServiceAdvisors[?workshopId][&appEmpRoleIdRestrict][&makeId][&phoneType]",
+          "response": {
+            "EmpId": "string",
+            "Name": "string",
+            "FirstName": "string",
+            "MiddleName": "string",
+            "LastName": "string",
+            "PhoneNumber": "string",
+            "Email": "string",
+            "BaseWorkshopId": 0
+          }
+        },
+        {
+          "method": "GET",
+          "name": "/ServiceBooking/ServiceAdvisor/Image - GET",
+          "description": "ServiceBooking - ServiceAdvisor - Image - GET",
+          "endpoint": "https://api.titandms.com.au/TitanServiceBooking/ServiceBooking/ServiceAdvisor/Image[?empId]",
+          "response": ""
+        },
+        {
+          "method": "GET",
+          "name": "/ServiceBooking/Services - GET",
+          "description": "Get Services",
+          "endpoint": "https://api.titandms.com.au/TitanServiceBooking/ServiceBooking/Services[?vin][&makeId]",
+          "response": {
+            "Code": "string",
+            "CodebookSourceCode": 0,
+            "CodebookSourceName": "string",
+            "StatusCode": 0,
+            "StandardPrice": 0,
+            "StandardHour": 0,
+            "SectionCode": 0,
+            "ClassCode": 0,
+            "Description": "string",
+            "ServiceMaintenanceKms": 0
+          }
+        },
+        {
+          "method": "POST",
+          "name": "/ServiceBooking/TimeSlots - POST",
+          "description": "Get Time Slots",
+          "endpoint": "https://api.titandms.com.au/TitanServiceBooking/ServiceBooking/TimeSlots",
+          "response": {
+            "DateFrom": "string",
+            "DateTo": "string",
+            "MakeId": "string",
+            "EmpRoleIdRestrict": "string",
+            "WorkshopIds": [
+              0
+            ],
+            "AdvisorIds": [
+              "string"
+            ],
+            "IsCheckLoanCar": true,
+            "Limit": 0,
+            "Offset": 0
+          }
+        },
+        {
+          "method": "GET",
+          "name": "/ServiceBooking/TransportOptions - GET",
+          "description": "Get Transport Options",
+          "endpoint": "https://api.titandms.com.au/TitanServiceBooking/ServiceBooking/TransportOptions[?workshopId][&makeId][&dateFrom][&dateTo]",
+          "response": {
+            "Id": "string",
+            "Description": "string",
+            "WorkshopId": 0
+          }
+        },
+        {
+          "method": "POST",
+          "name": "/Workshop/WorkshopAvailability - POST",
+          "description": "Get Workshop Availability",
+          "endpoint": "https://api.titandms.com.au/TitanServiceBooking/Workshop/WorkshopAvailability",
+          "response": {
+            "DateFrom": "string",
+            "DateTo": "string",
+            "WorkshopID": 0
+          }
+        },
+        {
+          "method": "POST",
+          "name": "Service Booking - CancelDMSBooking",
+          "description": "Cancel Repair Order",
+          "endpoint": "https://api.titandms.com.au/TitanServiceBooking/RepairOrder/CancelRepairOrder",
+          "response": {
+            "RepairOrderKey": 0,
+            "CancellationCode": 0,
+            "CancellationComment": "string",
+            "IsNoShow": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "Sundry Api",
+    "description": "",
+    "type": "REST",
+    "url": "https://developer.titandms.com.au/api-details#api=6731be53aca5923482f2a948",
+    "link": "/api-details#api=6731be53aca5923482f2a948",
+    "details": {
+      "title": "Sundry Api",
+      "description": "",
+      "operations": [
+        {
+          "method": "POST",
+          "name": "Add Sundry To RepairOrder",
+          "description": "This API allows the user to add a sundry product to a repair order.",
+          "endpoint": "https://api.titandms.com.au/Sundry/SundryProduct/RepairOrder",
+          "response": {
+            "RepairOrderNumber": "string",
+            "JobLine": 0,
+            "ProductCode": "string",
+            "IssuedQuantity": 0
+          }
+        },
+        {
+          "method": "GET",
+          "name": "get all Items",
+          "description": "This API allows the user to get all sundry product items.",
+          "endpoint": "https://api.titandms.com.au/Sundry/SundryProduct/Items[?page][&size]",
+          "response": {
+            "TotalItems": 0,
+            "Items": [
+              {
+                "ProductCode": "string",
+                "ProductDescription": "string",
+                "ProductType": 0,
+                "ProductTypeDescription": "string",
+                "ProductGroup": 0,
+                "ProductGroupDescription": "string",
+                "IsInventory": true
+              }
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "name": "get all Stores",
+          "description": "This API allows the user to get all sundry product stores.",
+          "endpoint": "https://api.titandms.com.au/Sundry/SundryProduct/Stores[?page][&size]",
+          "response": {
+            "TotalItems": 0,
+            "Items": [
+              {
+                "StoreKey": 0,
+                "StoreId": 0,
+                "StoreName": "string"
+              }
+            ]
+          }
+        },
+        {
+          "method": "POST",
+          "name": "Inventory Adjustment",
+          "description": "This API allows the user to post a stock adjustment to sundry product item. Adjustment value will be the difference between current QOH and QuantyOnHand from the request.",
+          "endpoint": "https://api.titandms.com.au/Sundry/SundryProduct/InventoryAdjustment",
+          "response": {
+            "StoreKey": 0,
+            "ProductCode": "string",
+            "QuantityOnHand": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "Vehicle Deal Api",
+    "description": "Vehicle Deal Api",
+    "type": "REST",
+    "url": "https://developer.titandms.com.au/api-details#api=vehicle-deal-api",
+    "link": "/api-details#api=vehicle-deal-api",
+    "details": {
+      "title": "Vehicle Deal Api",
+      "description": "Vehicle Deal Api",
+      "operations": [
+        {
+          "method": "POST",
+          "name": "/VehicleDeal/Deals - POST",
+          "description": "Get all deals",
+          "endpoint": "https://api.titandms.com.au/deal/VehicleDeal/Deals",
+          "response": {
+            "LocationId": "string",
+            "IncludeCancelled": true,
+            "IncludeQuotes": true,
+            "IncludeContracts": true,
+            "IncludeDelivered": true,
+            "CreatedTimestamp": "string",
+            "UpdatedTimestamp": "string",
+            "SignedDate": "string",
+            "SalesType": "string"
+          }
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleDeal/FinanceMethods - GET",
+          "description": "Get all finance methods",
+          "endpoint": "https://api.titandms.com.au/deal/VehicleDeal/FinanceMethods",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleDeal/FinanceRepaymentFrequencies - GET",
+          "description": "Get all finance repayment frequencies",
+          "endpoint": "https://api.titandms.com.au/deal/VehicleDeal/FinanceRepaymentFrequencies",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleDeal/FinanceStatuses - GET",
+          "description": "Get all finance statues",
+          "endpoint": "https://api.titandms.com.au/deal/VehicleDeal/FinanceStatuses",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleDeal/FinanceTypes - GET",
+          "description": "Get all finance types",
+          "endpoint": "https://api.titandms.com.au/deal/VehicleDeal/FinanceTypes",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleDeal/LeadSources - GET",
+          "description": "Get all lead sources",
+          "endpoint": "https://api.titandms.com.au/deal/VehicleDeal/LeadSources",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleDeal/Locations - GET",
+          "description": "Get all locations",
+          "endpoint": "https://api.titandms.com.au/deal/VehicleDeal/Locations",
+          "response": [
+            {
+              "Id": 0,
+              "Name": "string",
+              "DealerName": "string",
+              "DealerLicenceNo": "string",
+              "StreetNo": "string",
+              "StreetLine1": "string",
+              "StreetLine2": "string",
+              "Suburb": "string",
+              "State": "string",
+              "Postcode": "string",
+              "IsHoldingYard": true,
+              "VehicleClass": 0
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleDeal/SalesGroups - GET",
+          "description": "Get all sales groups",
+          "endpoint": "https://api.titandms.com.au/deal/VehicleDeal/SalesGroups",
+          "response": [
+            {
+              "Code": "string",
+              "Description": "string",
+              "ViewOrder": 0
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleDeal/SalesTypes - GET",
+          "description": "Get all sales types",
+          "endpoint": "https://api.titandms.com.au/deal/VehicleDeal/SalesTypes",
+          "response": [
+            {
+              "Code": "string",
+              "VehicleActionCode": 0,
+              "TradingEntityKey": 0,
+              "VehicleSalesCategoryCode": 0,
+              "VehicleSalesTypeCategoryCode": 0,
+              "Description": "string",
+              "SecondLanguage": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleDeal/VehicleClasses - GET",
+          "description": "Get all vehicle classes",
+          "endpoint": "https://api.titandms.com.au/deal/VehicleDeal/VehicleClasses",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Vehicle Stock",
+    "description": "Get Vehicle Stock Detail",
+    "type": "REST",
+    "url": "https://developer.titandms.com.au/api-details#api=vehicle-stock",
+    "link": "/api-details#api=vehicle-stock",
+    "details": {
+      "title": "Vehicle Stock",
+      "description": "Get Vehicle Stock Detail",
+      "operations": [
+        {
+          "method": "GET",
+          "name": "/Bureaucracies - GET",
+          "description": "Get all bureaucracies",
+          "endpoint": "https://api.titandms.com.au/VehicleStock/Bureaucracies",
+          "response": [
+            {
+              "Name": "string",
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/Locations - GET",
+          "description": "Get all locations",
+          "endpoint": "https://api.titandms.com.au/VehicleStock/Locations",
+          "response": [
+            {
+              "Id": 0,
+              "Name": "string",
+              "DealerName": "string",
+              "DealerLicenceNo": "string",
+              "StreetNo": "string",
+              "StreetLine1": "string",
+              "StreetLine2": "string",
+              "Suburb": "string",
+              "State": "string",
+              "Postcode": "string",
+              "IsHoldingYard": true,
+              "VehicleClass": 0
+            }
+          ]
+        },
+        {
+          "method": "POST",
+          "name": "/Stock - POST",
+          "description": "Get vehicle stockcard information",
+          "endpoint": "https://api.titandms.com.au/VehicleStock/Stock",
+          "response": {
+            "LocationId": "string",
+            "VehicleClass": "string",
+            "UsePublishRules": true,
+            "IncludeOnOrderVehicles": true,
+            "IncludeInTransitVehicles": true,
+            "IncludeReservedVehicles": true,
+            "LastUpdated": "string"
+          }
+        },
+        {
+          "method": "GET",
+          "name": "/StockcardStatuses - GET",
+          "description": "Get all vehicle stockcard statuses",
+          "endpoint": "https://api.titandms.com.au/VehicleStock/StockcardStatuses",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "POST",
+          "name": "/StockImages - POST",
+          "description": "Get vehicle stock images",
+          "endpoint": "https://api.titandms.com.au/VehicleStock/StockImages",
+          "response": {
+            "LocationId": "string",
+            "VehicleClass": "string",
+            "UsePublishRules": true,
+            "IncludeOnOrderVehicles": true,
+            "IncludeInTransitVehicles": true,
+            "IncludeReservedVehicles": true,
+            "LastUpdated": "string",
+            "Limit": 0,
+            "Offset": 0
+          }
+        },
+        {
+          "method": "GET",
+          "name": "/VehicleClasses - GET",
+          "description": "Get all vehicle classes",
+          "endpoint": "https://api.titandms.com.au/VehicleStock/VehicleClasses",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "name": "/VehiclePublishCodes - GET",
+          "description": "Get all vehicle publish codes",
+          "endpoint": "https://api.titandms.com.au/VehicleStock/VehiclePublishCodes",
+          "response": [
+            {
+              "Code": 0,
+              "Description": "string"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Vehicle Stock Card",
+    "description": "Reserve/Unreserve Vehicle Appraisal",
+    "type": "REST",
+    "url": "https://developer.titandms.com.au/api-details#api=vehicle-stock-card",
+    "link": "/api-details#api=vehicle-stock-card",
+    "details": {
+      "title": "Vehicle Stock Card",
+      "description": "Reserve/Unreserve Vehicle Appraisal",
+      "operations": [
+        {
+          "method": "GET",
+          "name": "/GetVehicleStockCard - GET",
+          "description": "Get Vehicle Stock Card based on the Vehicle Stock Number or Manufacturer ID",
+          "endpoint": "https://api.titandms.com.au/VehicleStockCard/GetVehicleStockCard[?StockNo][&ManufacturerId]",
+          "response": [
+            {
+              "VehicleStockcardKey": 0,
+              "ModelKey": 0,
+              "Vin": "string",
+              "RegoNo": "string",
+              "ManufacturerId": "string",
+              "Age": 0,
+              "StockNo": 0,
+              "VehicleClass": 0,
+              "StockcardStatusCode": 0,
+              "MakeModel": "string",
+              "VehicleDescription": "string",
+              "Colour": "string",
+              "LocationId": 0,
+              "ManufactureYear": 0,
+              "Odometer": 0,
+              "IsReserved": true
+            }
+          ]
+        },
+        {
+          "method": "POST",
+          "name": "/ReserveVehicle - POST",
+          "description": "Set Reserve based on the Vehicle StockCard Key",
+          "endpoint": "https://api.titandms.com.au/VehicleStockCard/ReserveVehicle",
+          "response": {
+            "VehicleStockCardKey": 0,
+            "ReservedUntilDate": "string"
+          }
+        },
+        {
+          "method": "POST",
+          "name": "/UnreserveVehicle - POST",
+          "description": "Set Unreserve based on the Vehicle StockCard Key",
+          "endpoint": "https://api.titandms.com.au/VehicleStockCard/UnreserveVehicle",
+          "response": {
+            "VehicleStockCardKey": 0
+          }
+        }
+      ]
+    }
+  }
+]
