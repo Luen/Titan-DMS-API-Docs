@@ -1,6 +1,6 @@
 # Titan DMS API Documentation
 
-This repository contains automatically generated documentation for the Titan DMS API. The documentation is generated using a Python script that scrapes the official Titan DMS Developer Portal.
+This repository contains automatically generated documentation for the Titan DMS API. The documentation is generated using a Python script that scrapes the official Titan DMS Developer Portal. The Titan API Docs are behind a login page, so this script scrapes the docs, allowing AI to index them like Cursor AI.
 
 ## Features
 
@@ -90,19 +90,6 @@ The documentation is generated in two formats:
 **Response:** [JSON Response Example]
 ```
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Titan DMS for providing the API documentation
-- The Playwright team for the excellent browser automation tool
